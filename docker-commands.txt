@@ -1,0 +1,4 @@
+docker build -t recurrence-prediction .
+
+Run docker in interactive mode
+docker run -it --rm -p 9696:9696 recurrence-prediction
