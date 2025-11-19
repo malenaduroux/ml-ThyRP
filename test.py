@@ -1,8 +1,8 @@
 import requests
 
 # API endpoint for HF Space
-# url = 'https://localhost:7860/predict'
-url = 'https://blue-sea-298.fly.dev/predict'
+url = 'https://localhost:7860/predict'
+# url = 'https://blue-sea-298.fly.dev/predict'
 
 # Example patient data
 patient = {
