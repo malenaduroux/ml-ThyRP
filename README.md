@@ -23,14 +23,15 @@ After initial cleaning and exploratory data analysis, three different models wer
 
 The entire training, tuning, and performance comparison can be found in `notebook.ipynb`.
 Performance comparison:
-(![Bar Chart Model Comparison](model_performance_comparison.png))
+![Bar Chart Model Comparison](model_performance_comparison.png)
 
 ## 🚀 How to Use This Repository
 
 This project provides a FastAPI service for predicting thyroid cancer recurrence using an XGBoost model.
 You can run it in two ways:
-In Docker, using the included Dockerfile
-Locally, using a virtual environment managed by uv
+- In Docker, using the included Dockerfile
+- Locally, using a virtual environment managed by uv
+
 Both workflows are documented below.
 
 You can also train the model yourself using `train.py`.
