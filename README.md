@@ -57,7 +57,7 @@ docker build -t recurrence-prediction .
 docker run -it --rm -p 9696:9696 recurrence-prediction
 ```
 
-The app will not be served http://localhost:9696/predict. You can access the docs and try it out on http://localhost:9696/predict/docs, run the test file `python test.py`, or use a curl request:
+The app will not be served http://localhost:9696/predict. You can access the docs and try it out on http://localhost:9696/predict/docs, run the test file `python test.py` (just make sure the url in test.py is the localhost one), or use a curl request:
 
 ```bash
 curl -X POST "http://localhost:9696/predict" \
@@ -103,3 +103,30 @@ source .venv/bin/activate
 uvicorn predict:app --host 0.0.0.0 --port 9696
 ```
 The app is now available on http://localhost:9696/predict like with the Docker method.
+
+## Cloud Deployment
+
+The API was also deployed to the cloud using fly.io. This may still be up and running when you use the repo, or it may have been destroyed (to avoid costs). The url is https://blue-sea-298.fly.dev/predict, also in test.py. You can run requests using this url in test.py or by using it in a curl request:
+
+```bash
+curl -X POST https://blue-sea-298.fly.dev/predict \
+-H "Content-Type: application/json" \
+-d '{
+  "age": 54,
+  "gender": "m",
+  "smoking": "yes",
+  "hx_smoking": "no",
+  "hx_radiothreapy": "no",
+  "thyroid_function": "euthyroid",
+  "physical_examination": "single_nodular_goiter-left",
+  "adenopathy": "right",
+  "pathology": "micropapillary",
+  "focality": "multi-focal",
+  "tumor": "t4a",
+  "node": "n1b",
+  "metastasis": "m0",
+  "stage": "ii",
+  "response": "structural_incomplete"
+}'
+```
+Example of the funcitonality of fly.io deployment is in the form of a screen recording `fly-deployment-test.mov`.
