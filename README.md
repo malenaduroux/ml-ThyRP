@@ -10,9 +10,9 @@ In this case, any patient with recurrence risk > 50% was monitored more closely,
 ## The Dataset
 `Thyroid_Diff.csv` in this repository. It is a dataset obtained from the [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/).
 
->> Citation: Borzooei, S., Briganti, G., Golparian, M. et al. Machine learning for risk stratification of thyroid cancer patients: a 15-year cohort study. Eur Arch Otorhinolaryngol 281, 2095–2104 (2024). https://doi.org/10.1007/s00405-023-08299-w
+> Citation: Borzooei, S., Briganti, G., Golparian, M. et al. Machine learning for risk stratification of thyroid cancer patients: a 15-year cohort study. Eur Arch Otorhinolaryngol 281, 2095–2104 (2024). https://doi.org/10.1007/s00405-023-08299-w
 
->> The dataset and details about it are available [here](https://archive.ics.uci.edu/dataset/915/differentiated+thyroid+cancer+recurrence).
+> The dataset and details about it are available [here](https://archive.ics.uci.edu/dataset/915/differentiated+thyroid+cancer+recurrence).
 
 
 The dataset contains 13 clinopathologic features, all categorical apart from age. The target is `recurred`.
