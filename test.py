@@ -1,7 +1,7 @@
 import requests
 
-# API endpoint
-url = 'http://localhost:7860/predict'
+# API endpoint for HF Space
+url = 'https://blue-sea-298.fly.dev/predict'
 
 # Example patient data
 patient = {
@@ -24,6 +24,9 @@ patient = {
 
 # Send POST request
 response = requests.post(url, json=patient)
+
+print(response.status_code)
+print(response.text)
 
 # Parse response
 predictions = response.json()
