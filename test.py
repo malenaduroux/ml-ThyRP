@@ -1,8 +1,8 @@
 import requests
 
 # API endpoint
-#url = 'http://localhost:9696/predict'
-url = "https://holy-snowflake-4008.fly.dev/predict"
+url = 'http://localhost:9696/predict'
+#url = "https://holy-snowflake-4008.fly.dev/predict"
 
 # Example patient data
 patient = {
